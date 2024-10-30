@@ -1,0 +1,145 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px; /* 1rem = 10px */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1.4rem; /* 14px */
+    line-height: 1.6;
+    color: #47261a; /* Color de texto cálido */
+    background-color: #f9f4e7; /* Fondo suave */
+    height: 100%;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #cb8034; /* Color de fondo cálido */
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 3rem; /* 30px */
+    color: #ffffff; /* Color blanco */
+}
+
+nav a {
+    color: #ffffff; /* Color blanco */
+    margin: 0 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ddc08d; /* Color de enlace al pasar el ratón */
+}
+
+/* Secciones */
+section {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+/* Estilos para títulos de secciones */
+h2 {
+    font-size: 2.4rem; /* 24px */
+    color: #9c886f; /* Color atractivo */
+    margin-bottom: 1rem;
+}
+
+/* Estilos para formularios */
+form {
+    background: #ffffff; /* Fondo blanco para formularios */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 400px; /* Ancho máximo del formulario */
+}
+
+input {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 1.4rem; /* 14px */
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #cb8034; /* Color de borde al enfocar */
+    outline: none; /* Sin contorno */
+}
+
+/* Botones */
+button {
+    background-color: #ddc08d; /* Color de botón */
+    color: #47261a; /* Color de texto en botón */
+    border: none;
+    border-radius: 30px; /* Bordes redondeados */
+    padding: 1rem 2rem;
+    font-size: 1.6rem; /* 16px */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra suave */
+}
+
+button:hover {
+    background-color: #cb8034; /* Color de botón al pasar el ratón */
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+/* Estilos para lista de productos */
+#lista-panes {
+    margin-top: 2rem;
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+#lista-panes div {
+    background: #ffffff; /* Fondo blanco para cada producto */
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 0.5rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #47261a; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; /* Ajuste en pantallas pequeñas */
+    }
+
+    h2 {
+        font-size: 2rem; /* Ajuste en pantallas pequeñas */
+    }
+
+    form {
+        padding: 1.5rem; /* Menos padding en móviles */
+    }
+
+    button {
+        width: 100%; /* Botones de ancho completo en móviles */
+    }
+}

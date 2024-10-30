@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>La Desesperanza - CRUD de Panes</title>
+</head>
+<body>
+    <header>
+        <h1>Panadería La Desesperanza</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h2>Bienvenidos a La Desesperanza</h2>
+        <p>¡El mejor pan de la ciudad!</p>
+    </section>
+
+    <section id="productos">
+        <h2>Gestión de Productos</h2>
+
+        <h3>Agregar Pan</h3>
+        <form id="form-agregar">
+            <input type="text" name="nombre_pan" placeholder="Nombre del Pan" required>
+            <input type="number" name="cantidad" placeholder="Cantidad" required>
+            <input type="number" name="precio_pan" placeholder="Precio" required>
+            <button type="submit">Agregar Pan</button>
+        </form>
+        <div id="mensaje-agregar"></div>
+
+        <h3>Actualizar Pan</h3>
+        <form id="form-actualizar">
+            <input type="number" name="id_pan" placeholder="ID del Pan" required>
+            <input type="text" name="nombre_pan" placeholder="Nuevo Nombre del Pan">
+            <input type="number" name="cantidad" placeholder="Nueva Cantidad">
+            <input type="number" name="precio_pan" placeholder="Nuevo Precio">
+            <button type="submit">Actualizar Pan</button>
+        </form>
+        <div id="mensaje-actualizar"></div>
+
+        <h3>Eliminar Pan</h3>
+        <form id="form-eliminar">
+            <input type="number" name="id_pan" placeholder="ID del Pan a Eliminar" required>
+            <button type="submit">Eliminar Pan</button>
+        </form>
+        <div id="mensaje-eliminar"></div>
+
+        <h3>Lista de Productos</h3>
+        <div id="lista-panes"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Panadería La Desesperanza</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
